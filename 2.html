@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:#111111 ;
+        }
+
+        .login {
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 400px;
+            height: 500px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px gray;
+        }
+
+        h1 {
+            color: rgba(14, 13, 13, 0.76);
+            font-size: 30px;
+            font-family:  'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        input , select {
+            width: 350px;
+            height: 25px;
+           
+        }
+        select {
+            width: 358px;
+            height: 32px;
+           
+        }
+        hr {
+            width: 325px;
+            color: rgba(51, 48, 48, 0.568);
+        }
+
+        button {
+            width: 358px;
+            height: 35px;
+            border-radius: 5px;
+            background-color:#111111;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        button:hover {
+            background-color:#111111d8;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <div class="head">
+                <h1>Sign Up</h1>
+            </div>
+            <div class="form">
+                <label for="name">Name:</label>
+                <input type="name" id="name">
+                <br>
+
+                <label for="batch">Batch:</label>
+                <select name="Batch" id="batch">
+                    <option value="">Sigma 2.0</option>
+                    <option value="">Sigma 2.1</option>
+                    <option value="">Sigma 2.5</option>
+                    <option value="">Sigma 3.0</option>
+                </select>
+                <br>
+
+                <label for="age">Age:</label>
+                <input type="age" id="age">
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+                <br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password">
+                <br>
+                <button>Sign Up</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
